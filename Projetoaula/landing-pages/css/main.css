@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Cabin:wght@600&family=Italiana&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=News+Cycle:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Cabin:wght@600&family=Italiana&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=News+Cycle:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Cabin:wght@600&family=Italiana&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=News+Cycle:wght@400;700&family=Workbench&display=swap');
+:root {
+    --cor-menu:#F294C0;
+    --cor-rodape:#F294C0;
+    --cor-texto-mosaico:#F294C0;
+    --cor-formulario: rgba(242, 148, 192, 0.9);
+    --cor-fonte-formulario:#485DD9;
+    --cor-botao-formulario:#5061BF;
+    --cor-botao-formulario-hover:#F294C0;
+    --cor-do-formulario-fundo: rgba(255, 255, 255, 0.7);/* Cor do fundo transparente */
+    --cor-letra-botao-formulario:white;
+    --cor-chamada: rgba(242, 148, 192, 0.9);
+    --cor-fonte-chamada: white;
+    --fonte-formulario:"Lato", sans-serif;
+    --fonte-titulo-formulario: "Abril Fatface", serif;
+    --fonte-mosaico: "Abril Fatface", serif;
+    --fonte-rodape: "Abril Fatface", serif;
+    --fonte-chamada: "Abril Fatface", serif;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+
+/*div gerais*/
+
+
+
+/**header**/
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 2%;
+}
+
+header {
+    background-color: var(--cor-menu);
+}
+
+.logo-1 {
+    background-image: url(../imagens/logo-1-.png);
+    width: 360px;
+    height: 150px;
+    background-size: 50% auto;
+    background-repeat: no-repeat;
+    margin-left: 140px;
+    margin-bottom:30px ;
+}
+
+.logo-2 {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+
+}
+
+.logo-2 i {
+    margin: 5px;
+}
+
+/* layout 1*/
+
+.layout-fundo{
+    background-image: url(../imagens/photo01-form.jpg);
+    padding: 0 2%;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-position: center;
+    
+}
+
+
+
+.form{
+    position: absolute;
+    justify-content: center;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 400px;
+    background-color: var(--cor-do-formulario-fundo); /* Cor do fundo transparente */
+}
+
+.form h2{
+   display: flex;
+   justify-content: center;
+   padding: 5px;
+   font-size: 40px;
+   color: var(--cor-fonte-formulario);
+   font-family: var(--fonte-titulo-formulario);
+}
+
+
+.input-container label {
+    display: inline-block; /* Torna o elemento span em bloco para aplicar largura e centralizar */
+    width: 100%;
+    color: var(--cor-fonte-formulario);
+    margin-top: 5px;
+}
+
+.input-container-checkbox {
+    width: 100%;
+    color: var(--cor-fonte-formulario);
+    margin-top: 2px;
+    margin: 60px;
+}
+.input-container-radio  {
+    width: 100%;
+    color: var(--cor-fonte-formulario);
+    margin-top: 2px;
+    margin: 60px;
+}
+
+.input-container input{
+    margin-top: 8px;
+    width: 250px;
+    height: 30px;
+    border: 3px solid var(--cor-fonte-formulario);
+}
+
+.input-container {
+    text-align: center; /* Centraliza o conteúdo dentro do .input-container */
+}
+
+.form .input-submit{
+    text-align: center;
+}
+
+.input-submit input{
+    font-family: var(--fonte-formulario);
+    margin-top: 29px;
+    width: 60px;
+    height: 30px;
+    border: none;
+    color: var(--cor-letra-botao-formulario);
+    background-color: var(--cor-botao-formulario);
+    cursor: pointer;
+}
+.input-submit input[type="reset"]{
+    font-family: var(--fonte-formulario);
+    margin-top: 29px;
+    width: 120px;
+    height: 30px;
+    border: none;
+    color: var(--cor-letra-botao-formulario);
+    background-color: var(--cor-botao-formulario);
+    cursor: pointer;
+}
+.input-submit input:hover{
+    background-color: var(--cor-botao-formulario-hover);
+}
+
+/* chamada */
+
+.chamada{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: var(--cor-chamada);
+    justify-content: center;
+    
+}
+
+.chamada span{
+    display: flex;
+    font-family: var(--fonte-chamada);
+    color: var(--cor-fonte-chamada);
+    align-items: center;
+    font-size: 20px;
+}
+
+/***/
+
+/* Mosaico */
+.flex-mosaico {
+    padding: 8px;
+    display: flex;
+    width: 100%;
+}
+
+.item-1-img {
+    background-image: url(../imagens/mosaico-1.jpg);
+    background-position: center;
+    background-size: contain; /* imagem se ajustar no tamanho */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    height: 60vh;
+    width: 60%; /* Alterei para 60% para dar espaço ao item-2 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-3-img {
+    background-image: url(../imagens/mosaico-3.jpg);
+    background-position: center;
+    background-size: contain; /* imagem se ajustar no tamanho */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    height: 60vh;
+    width: 60%; /* Alterei para 60% para dar espaço ao item-2 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-2-texto {
+    display: flex;
+    padding: 80px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%; /* Define a largura de 40% */
+    color: var(--cor-texto-mosaico);
+}
+.item-2-texto p {
+    font-family:var(--fonte-mosaico);
+    font-size: 26px;
+}
+
+/***/
+
+/*footer*/
+footer{
+    padding: 60px 0;
+    border: 4px solid var(--cor-rodape);
+    text-align: center;
+    color: white;
+    font-family: var(--fonte-rodape);
+    background-color: var(--cor-rodape);
+}
+/***/
+
+
+
+
+@media (max-width: 786px) {
+    /* menu e logos*/
+    header {
+        flex-direction: column; /* Empilhar os elementos verticalmente */
+        align-items: center; /* Centralizar os itens */
+    }
+
+    .logo-1 {
+        margin-left: 20px; /* Remover a margem à esquerda */
+        margin-bottom: 10px; /* Ajuste conforme necessário */
+    }
+
+    /*****/
+
+    /*chamada responsivo*/
+    .chamada{
+        padding: 10px;
+    }
+    .chamada span {
+        font-size: 16px;
+        padding: 10px;
+        margin: 20px;
+        text-align: center;
+    }
+    /***/
+}
