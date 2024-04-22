@@ -40,26 +40,26 @@ public class ServletExemplo1 extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String parametro = request.getParameter("paginas");
+        int parametro = Integer.parseInt(request.getParameter("paginas"));
         String r = "";
 
         switch (parametro) {
-            case "cores":
-                r = "cores";
+            case 1:
+                r = "cores.html";
                 break;
-            case "imagens":
-                r = "imagens";
+            case 2:
+                r = "letras.html";
                 break;
-            case "numeros":
-                r = "numeros";
+            case 3:
+                r = "numeros.html";
                 break;
-            case "letras":
-                r = "letras";
+            case 4:
+                r = "imagens.html";
                 break;
 
         }
         System.out.println(r);
-        RequestDispatcher dis = request.getRequestDispatcher(r);
+        RequestDispatcher dis = request.getRequestDispatcher(r );
         dis.forward(request, response);
     }
 
